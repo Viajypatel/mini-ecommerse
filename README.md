@@ -62,9 +62,10 @@ A simple e-commerce project built with **React + Vite** and state management usi
 Clone the repository and install dependencies:
 
 ```bash
-git clone <your-repo-url>
-cd MiniEcomerse
+git clone https://github.com/Viajypatel/mini-ecommerse.git
+cd mini-ecommerse
 npm install
+npm run dev
 
 ## 📂 Project Structure
 
