@@ -1,12 +1,70 @@
-# React + Vite
+# 🛍️ Ecommerce App (React + Zustand + TailwindCSS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A mini e-commerce Single Page Application (SPA) built with **React**, **Zustand**, and **TailwindCSS**.  
+It consumes the [Fake Store API](https://fakestoreapi.com/) to display products, handle cart functionality, and simulate a checkout flow.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+### 🔎 Product Listing (`/`)
+- Responsive grid of products (image, title, price).
+- Search by product title.
+- Filter by category.
+- Loading indicators and error handling.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 📄 Product Detail (`/product/:id`)
+- Full product details: image, title, description, price, and rating.
+- Add to cart with quantity selector (1–5).
+
+### 🛒 Shopping Cart (`/cart`)
+- View items added to cart with:
+  - Thumbnail, title, unit price, quantity selector (1–10), and subtotal.
+- Update or remove items.
+- Displays grand total.
+- “Proceed to Checkout” button.
+
+### ✅ Checkout (`/checkout`)
+- Order summary with total amount.
+- Simple form: name, email, address (with validation).
+- Place order → clears cart and shows confirmation message.
+
+### 💾 Data Caching
+- Products and product details are cached in memory using **Zustand**.
+- Avoids redundant API calls on revisits.
+
+### 🌍 State Management
+- **Zustand** manages global app state for products and shopping cart.
+
+---
+
+## 🛠️ Tech Stack
+
+- [React](https://react.dev/) – Frontend library
+- [React Router](https://reactrouter.com/) – Routing
+- [Zustand](https://zustand-demo.pmnd.rs/) – State management
+
+
+# MiniEcomerse
+
+A simple e-commerce project built with **React + Vite** and state management using **Zustand**.
+
+---
+
+
+
+- [TailwindCSS](https://tailwindcss.com/) – Styling
+- [Fake Store API](https://fakestoreapi.com/) – Public product API
+
+---
+## 🚀 Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone <your-repo-url>
+cd MiniEcomerse
+npm install
+
+## 📂 Project Structure
+
